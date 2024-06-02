@@ -21,6 +21,8 @@
 
 The Email Operator is a Kubernetes custom controller that manages the lifecycle of email sending configurations and email sending tasks within a Kubernetes cluster. It uses custom resources `EmailSenderConfig` and `Email` to define email sending configurations and tasks respectively.
 
+In this implementation i used `Kind` as a test kubernetes cluster and `KubeBuilder` to generate Kubernetes APIs.
+
 ## Prerequisites
 
 - Kubernetes cluster (v1.11.3+)
