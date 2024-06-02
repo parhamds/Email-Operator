@@ -33,6 +33,8 @@ In this implementation i used `Kind` as a test kubernetes cluster and `KubeBuild
 
 ## Installation
 
+The CRDs for `Email` and `EmailSenderConfig` are located in `/config/crd/bases/`
+
 To install the CRDs, you need to follow these steps:
 
 1. Clone the repository:
