@@ -1,0 +1,14 @@
+apiVersion: parham.my.domain/v1
+kind: Email
+metadata:
+  labels:
+    app.kubernetes.io/name: email-v1
+    app.kubernetes.io/managed-by: kustomize
+  name: email-sample2
+  namespace: parham
+spec:
+  senderConfigRef: "emailsenderconfig-sample2"
+  recipientEmail: "parham.dskn@gmail.com"
+  subject: "Test Email"
+  body: "This is a test email sent by the operator."
+

@@ -1,0 +1,66 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manager-role
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - parham.my.domain
+  resources:
+  - emails
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - parham.my.domain
+  resources:
+  - emails/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - parham.my.domain
+  resources:
+  - emails/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - parham.my.domain
+  resources:
+  - emailsenderconfigs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - parham.my.domain
+  resources:
+  - emailsenderconfigs/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - parham.my.domain
+  resources:
+  - emailsenderconfigs/status
+  verbs:
+  - get
+  - patch
+  - update

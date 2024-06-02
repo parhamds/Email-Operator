@@ -1,0 +1,11 @@
+apiVersion: parham.my.domain/v1
+kind: EmailSenderConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: email-v1
+    app.kubernetes.io/managed-by: kustomize
+  name: emailsenderconfig-sample
+spec:
+  provider: "MailerSend"
+  apiTokenSecretRef: "mailersend-api-token"
+  senderEmail: "parham.doustkani@trial-z3m5jgryy1d4dpyo.mlsender.net"

@@ -1,0 +1,11 @@
+apiVersion: parham.my.domain/v1
+kind: EmailSenderConfig
+metadata:
+  labels:
+    app.kubernetes.io/name: email-v1
+    app.kubernetes.io/managed-by: kustomize
+  name: emailsenderconfig-sample2
+spec:
+  provider: "Mailgun"
+  apiTokenSecretRef: "mailgun-api-token"
+  senderEmail: "parham.doustkani@sandboxd957cf4e935841eb914227867cc3aaeb.mailgun.org"

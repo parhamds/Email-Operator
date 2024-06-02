@@ -1,0 +1,25 @@
+{
+    "namespace": "default",
+    "mailgunNamespace": "mailgunns",
+    "recipientEmail": "parham.dskn@gmail.com",
+    "emailSubject": "Test Subject",
+    "emailBody": "Test Body",
+    "senderConfigs": [
+      {
+        "name": "test-senderconfig1",
+        "provider": "MailerSend",
+        "apiTokenSecretName": "test-apitoken-secret1"
+      },
+      {
+        "name": "test-senderconfig2",
+        "provider": "MailGun",
+        "apiTokenSecretName": "test-apitoken-secret2"
+      },
+      {
+        "name": "test-senderconfig3",
+        "provider": "MailerSend",
+        "apiTokenSecretName": "test-apitoken-secret3"
+      }
+    ]
+  }
+  

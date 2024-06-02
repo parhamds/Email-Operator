@@ -1,0 +1,5 @@
+## Append samples of your project ##
+resources:
+- parham_v1_email.yaml
+- parham_v1_emailsenderconfig.yaml
+# +kubebuilder:scaffold:manifestskustomizesamples
